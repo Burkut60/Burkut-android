@@ -1,5 +1,6 @@
 package Application.ObjectGs;
 
+import java.util.Date;
 import java.util.List;
 
 public class News {
@@ -7,18 +8,13 @@ public class News {
     private int id;
     private String title;
     private String description;
-    private String date;
+    public String date;
     private boolean visible;
     private List<String> keywords;
 
-//public News(int id, String title, String description, String date, boolean visible){
-//    this.id = id;
-//    this.title = title;
-//    this.description = description;
-//    this.date = date;
-//    this.visible = visible;
-
-// }
+//    public News(Date date) {
+//       this.date = date;
+//    }
 
     public boolean isVisible() {
         return visible;
@@ -52,14 +48,6 @@ public class News {
         this.description = description;
     }
 
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
     public List<String> getKeywords() {
         return keywords;
     }
@@ -67,6 +55,8 @@ public class News {
     public void setKeywords(List<String> keywords) {
         this.keywords = keywords;
     }
+
+
 
 }
 
